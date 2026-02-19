@@ -24,7 +24,9 @@
     <a href="about.html" class="btn">Explore My Journey</a>
 </div>
 
-<div class="chat-container">
+<button id="chatToggle" onclick="toggleChat()">💬</button>
+
+<div class="chat-container" id="chatContainer">
     <div class="chat-header">Ask Fawaaz AI 🤖</div>
     <div class="chat-box" id="chatBox"></div>
     <div class="chat-input">
@@ -32,6 +34,7 @@
         <button onclick="sendMessage()">Send</button>
     </div>
 </div>
+
 
 <script src="script.js"></script>
 </body>

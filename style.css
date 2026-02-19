@@ -219,3 +219,26 @@ input[type=submit] { background:#00E5FF; color:#000; font-weight:700; cursor:poi
 }
 
 z-index: 9999;
+
+#chatToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--accent);
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.chat-container {
+    display: none;
+}
+
+.chat-container {
+    width: 320px;
+    max-height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+}

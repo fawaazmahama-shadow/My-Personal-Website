@@ -112,3 +112,17 @@ async function sendMessage() {
     }, 800);
 }
 
+function toggleChat() {
+    const chat = document.getElementById("chatContainer");
+    chat.style.display = chat.style.display === "block" ? "none" : "block";
+}
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        const chatBox = document.getElementById("chatBox");
+        if (chatBox) {
+            chatBox.innerHTML += `<p><strong>AI:</strong> Hi 👋 I'm Fawaaz's assistant. Ask me about his skills or projects!</p>`;
+        }
+    }, 1500);
+});
+
